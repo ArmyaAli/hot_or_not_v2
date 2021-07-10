@@ -1,0 +1,58 @@
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.outerContainer:hover > .buttonLogo {
+    animation: rotateLogo 1s infinite linear;
+}
+
+.outerContainer:hover > .buttonInnerContainer {
+    border-style: solid;
+    border-color: white;
+    border-radius: 16px;
+    padding: 8px;
+    color: #6441A5;
+    width: 50%;    
+    text-align: right;
+    font-size: 24px;
+    padding-right: 16px;
+    background-color: white;
+}
+
+.buttonInnerContainer {
+    border-style: solid;
+    border-color: white;
+    border-radius: 16px;
+    padding: 8px;
+    color: white;
+    width: 50%;
+    text-align: right;
+    font-size: 24px;
+}
+
+.buttonLogo {
+    position: relative;
+    left: 50px;
+    width: 72px;
+}
+
+@keyframes rotateLogo {
+    0% {
+        transform: rotate(0deg);
+    }
+    33% {
+        transform: rotate(45deg);
+    }
+    66% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
